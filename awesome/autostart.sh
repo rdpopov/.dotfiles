@@ -6,6 +6,7 @@ function run {
     $@&
   fi
 }
+
 #run xrandr --output VGA-1 --primary --mode 1360x768 --pos 0x0 --rotate normal
 #run xrandr --output HDMI2 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
 #autorandr horizontal
@@ -18,8 +19,9 @@ run arandr
 run /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 run numlockx on
 run volumeicon
-feh --bg-fill $HOME/.config/awesome/wall/woods.png
+feh --bg-fill $HOME/.config/awesome/wall/mystery-3840x2160.jpg
 run xautolock -detectsleep -time 5 -locker i3lock-fancy
+bash $HOME/.config/awesome/disable_trackpoint.sh
 #run nitrogen --restore
 # run conky $HOME/.config/awesome/system-overview
 #you can set wallpapers in themes as well

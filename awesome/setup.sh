@@ -1,4 +1,4 @@
-sudo apt install \
+sudo apt install -y \
       arandr \
       nm-tray \
       xfce4-power-manager \
